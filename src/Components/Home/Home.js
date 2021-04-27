@@ -4,7 +4,7 @@ function Home(props) {
   const [users, setusers] = useState([]);
   useEffect(() => {
     let api_key = "6087c41b8949a61951b13731";
-    fetch(" https://dummyapi.io/data/api/user?limit=5", {
+    fetch(" https://dummyapi.io/data/api/user?limit=20", {
       method: "GET",
       headers: {
         "app-id": "6087d9595d6ecb35749abb3c",
