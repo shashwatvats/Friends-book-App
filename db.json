@@ -1,3 +1,16 @@
 {
-  "friends": []
+  "friends": [
+    {
+      "id": "0F8JIqi4zwvb77FGz6Wt",
+      "fname": "Heinz-Georg",
+      "lname": "Fiedler",
+      "email": "heinz-georg.fiedler@example.com"
+    },
+    {
+      "id": "0P6E1d4nr0L1ntW8cjGU",
+      "fname": "Katie",
+      "lname": "Hughes",
+      "email": "katie.hughes@example.com"
+    }
+  ]
 }

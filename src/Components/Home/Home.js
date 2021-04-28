@@ -4,17 +4,17 @@ function Home(props) {
   const [users, setusers] = useState([]);
   useEffect(() => {
     let api_key = "6087c41b8949a61951b13731";
-    fetch(" https://dummyapi.io/data/api/user?limit=5", {
+    fetch(" https://dummyapi.io/data/api/user?limit=10", {
       method: "GET",
       headers: {
-        "app-id": "6087d9595d6ecb35749abb3c",
+        "app-id": "6087c41b8949a61951b13731",
       },
     })
       .then((res) => res.json())
       .then((data) => {
         setusers(data.data);
       });
-  });
+  }, []);
   function viewProfile(id) {
     props.userId(id);
   }
@@ -41,13 +41,12 @@ function Home(props) {
             <p class="card-text">{item.email}</p>
             <Link
               to="/profile"
-              className="btn btn-info"
+              className="btn btn-info me-2"
               onClick={viewProfile.bind(this, item.id)}
             >
               See Profile
             </Link>
-            <Link
-              to="/addfriend"
+            <button
               className="btn btn-warning"
               onClick={addFriend.bind(
                 this,
@@ -60,7 +59,7 @@ function Home(props) {
               )}
             >
               Add Friend
-            </Link>
+            </button>
           </div>
         </div>
       ))}

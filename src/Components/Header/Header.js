@@ -39,7 +39,7 @@ function Header() {
               </li>
               <li className="nav-item">
                 <Link
-                  id="login"
+                  id="friendlist"
                   to="/friendlist"
                   style={{ color: "white" }}
                   className="nav-link"
